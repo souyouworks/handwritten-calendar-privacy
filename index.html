@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>手書きカレンダー プライバシーポリシー｜souyou works</title>
+<style>
+:root { color-scheme: light; }
+body {
+  margin: 0 auto; padding: 32px 20px 80px; max-width: 42rem;
+  font-family: "Hiragino Mincho ProN", "Yu Mincho", serif;
+  line-height: 1.9; color: #2c2a26; background: #f7f4ee;
+}
+h1 { font-size: 1.5rem; margin: 0 0 4px; }
+h2 { font-size: 1.1rem; margin: 2.4em 0 .6em; padding-bottom: .3em;
+     border-bottom: 1px solid #ddd6c8; }
+h3 { font-size: 1rem; margin: 1.6em 0 .4em; }
+.updated { color: #8a8377; font-size: .85rem; margin-bottom: 2em; }
+table { border-collapse: collapse; width: 100%; margin: 1em 0; font-size: .95rem; }
+th, td { border: 1px solid #ddd6c8; padding: .5em .7em; text-align: left; }
+th { background: #efeade; }
+.note { background: #fbf8f2; border-left: 3px solid #b0442f; padding: .8em 1em; margin: 1em 0; }
+footer { margin-top: 3em; color: #8a8377; font-size: .85rem; }
+a { color: #b0442f; }
+</style>
+</head>
+<body>
+<h1>手書きカレンダー プライバシーポリシー</h1>
+<p class="updated">最終更新日：2026年9月2日</p>
+
+<p>souyou works（以下「当方」）は、iPhone・iPad向けアプリ「手書きカレンダー」（以下「本アプリ」）における利用者の情報の取り扱いについて、以下のとおり定めます。</p>
+
+<h2>1. 基本的な考え方</h2>
+<p><strong>本アプリは、利用者の情報を当方が集めることを目的としていません。</strong></p>
+<p>書いたもの、貼った写真、打った文字、予定は、<strong>利用者の端末と、利用者自身の iCloud にのみ保存されます。</strong>当方はそれらを見ることも、取り出すこともできません。</p>
+<p>ただし、次の2つの機能を使ったときにかぎり、情報が端末の外へ送られます。どちらも<strong>利用者が操作したときだけ</strong>動きます。</p>
+
+<h2>2. 外部へ送られる情報</h2>
+
+<h3>2-1. 音声で予定を作るとき</h3>
+<p>マイクに向かって話した音声は、<strong>Appleの音声認識</strong>へ送られ、文字に変換されます。これは iOS のキーボードにあるマイク入力と同じ仕組みです。取り扱いは Apple のプライバシーポリシーに従います。</p>
+<ul>
+<li>送り先：Apple Inc.</li>
+<li>送るもの：話した音声</li>
+<li>目的：音声を文字にするため</li>
+</ul>
+<div class="note">通信できないときは、端末の中だけで文字にします（精度は下がります）。</div>
+
+<h3>2-2. AI（「すず」）に話しかけたとき、手書きを予定に変換するとき</h3>
+<p>次の情報が、当方が管理する中継サーバー（Cloudflare Workers）を経由して、<strong>Anthropic PBC</strong> の Claude API へ送られます。</p>
+<ul>
+<li>送り先：Anthropic PBC（米国）／中継として Cloudflare, Inc.</li>
+<li>送るもの：利用者が入力・発話した文章／手書きを予定に変換するときは<strong>その手書き部分の画像</strong>／予定を作るために必要な日付・時刻</li>
+<li>目的：言葉の理解と、予定の候補を作るため</li>
+</ul>
+<div class="note"><strong>手書きの画像を送るのは、利用者が「読み取る」操作をしたときだけ</strong>です。書いただけでは送られません。</div>
+<p>Anthropic は、API 経由で受け取った情報を<strong>モデルの学習には使用しません。</strong></p>
+<p><strong>中継サーバーは、送受信の内容を保存しません。</strong>接続の失敗など、機能の維持に必要な最小限の記録（日時・エラーの種類）のみを一時的に扱います。</p>
+
+<h2>3. 端末とiCloudに保存される情報</h2>
+<table>
+<tr><th>情報</th><th>保存先</th></tr>
+<tr><td>手書き、写真、打った文字</td><td>端末内および利用者のiCloud（プライベートデータベース）</td></tr>
+<tr><td>予定</td><td><strong>端末の「カレンダー」アプリ</strong>（本アプリ独自の保存はしません）</td></tr>
+<tr><td>設定（書体・通知など）</td><td>端末内</td></tr>
+</table>
+<p>iCloud への同期は、<strong>利用者自身のApple Accountの領域</strong>で行われます。当方はアクセスできません。同期を止めたい場合は、iOSの「設定」→ Apple Account → iCloud から本アプリをオフにしてください。</p>
+
+<h2>4. 端末の機能へのアクセス</h2>
+<table>
+<tr><th>機能</th><th>何のために</th></tr>
+<tr><td>カレンダー</td><td>予定を表示・追加・変更するため</td></tr>
+<tr><td>カメラ</td><td>その場で撮った写真を紙に貼るため</td></tr>
+<tr><td>写真</td><td>撮ってある写真を紙に貼るため</td></tr>
+<tr><td>マイク</td><td>話しかけて予定を作るため</td></tr>
+<tr><td>音声認識</td><td>話した言葉を文字にするため</td></tr>
+<tr><td>通知</td><td>予定の時刻が近づいたことを知らせるため</td></tr>
+</table>
+<p>いずれも、<strong>利用者が許可したときにだけ</strong>使います。許可はいつでも iOS の「設定」から取り消せます。</p>
+
+<h2>5. 当方が集めない情報</h2>
+<p>当方は、次のいずれも<strong>取得しません。</strong></p>
+<ul>
+<li>氏名、メールアドレス、電話番号、住所</li>
+<li>位置情報</li>
+<li>端末の識別子、広告ID</li>
+<li>利用状況の分析データ</li>
+</ul>
+<p>本アプリに<strong>広告は表示されず、第三者の分析ツールも組み込んでいません。</strong></p>
+
+<h2>6. 子どもの利用について</h2>
+<p>本アプリは特定の年齢層を対象としていません。当方は利用者から個人情報を取得しないため、年齢を問わず同じ扱いとなります。</p>
+
+<h2>7. 情報の削除</h2>
+<p>端末内およびiCloudの情報は、<strong>本アプリを削除するか、iOSの「設定」からiCloudの本アプリをオフにして削除する</strong>ことで消去できます。当方が保持している情報はないため、当方への削除依頼は不要です。</p>
+
+<h2>8. 本ポリシーの変更</h2>
+<p>内容を変更する場合は、本ページの最終更新日を改めます。重要な変更がある場合は、アプリ内でお知らせします。</p>
+
+<h2>9. お問い合わせ</h2>
+<p>souyou works<br>
+メール：<a href="mailto:REPLACE_EMAIL">REPLACE_EMAIL</a></p>
+
+<footer>souyou works</footer>
+</body>
+</html>
